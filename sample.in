@@ -1,0 +1,22 @@
+# nextnano++ sample input
+global{
+    simulate3D{}
+    temperature = 300.0     # Kelvin
+    substrate{ name = "GaAs" }
+}
+
+$WELL_WIDTH = 10.5e-9
+$COUNT = 42
+
+grid{
+    xgrid{ line{ pos = -$WELL_WIDTH  spacing = 0.5 } }
+}
+
+quantum{
+    region{
+        no_density = yes
+        output_wavefunctions{ max_num = 10  scale = 1e3  probabilities = no }
+    }
+}
+
+run{ quantum{} }
