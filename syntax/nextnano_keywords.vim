@@ -821,17 +821,7 @@ hi def link nnG_quantum_region_kp_8band_dispersion_full_kxgrid_line_attr nextnan
 
 syn region nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x matchgroup=nextnanoGroupName start="\<D_x\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained C2 C4 C6
 syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained D_z
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained approximate_kappa
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained bicgstab
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained cg cscg
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained cutoff
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained method
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained none
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained num_points
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained spacing
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr contained use_Luttinger_parameters
 hi def link nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_D_x_attr nextnanoAttribute
 
 syn region nnG_splitquantum_region_Delta_Gamma_L_X_Delta matchgroup=nextnanoGroupName start="\<Delta\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -892,12 +882,6 @@ syn region nnG_database_Nested_groups_in_database__zb matchgroup=nextnanoGroupNa
       \ contains=nnG_database_Nested_groups_in_database__zb_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_Nested_groups_in_database__zb_attr contained and
 hi def link nnG_database_Nested_groups_in_database__zb_attr nextnanoAttribute
-
-syn region nnG_database_bands_Bands_for_Wurtzite_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
-syn region nnG_database_bands_Bands_for_zincblende_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_Bands_groups_in_database matchgroup=nextnanoGroupName start="\<database\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_bands_Bands_groups_in_database__zb,nnG_database_bands_Bands_groups_in_database_position,nnG_database_bands_Bands_groups_in_database_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -987,12 +971,12 @@ hi def link nnG_database_strain_Strain_groups_in_database_gattr nextnanoAttribut
 
 syn region nnG_database_wurtzite_Wurtzite_related_wz_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_wurtzite_Wurtzite_related_wz_groups_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_wurtzite_Wurtzite_related_wz_groups_attr contained AlN GaN InN in
+syn keyword nnG_database_wurtzite_Wurtzite_related_wz_groups_attr contained in
 hi def link nnG_database_wurtzite_Wurtzite_related_wz_groups_attr nextnanoAttribute
 
 syn region nnG_database_zincblende_Zincblende_related_zb_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_zincblende_Zincblende_related_zb_groups_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_zincblende_Zincblende_related_zb_groups_attr contained GaAs InP Si in
+syn keyword nnG_database_zincblende_Zincblende_related_zb_groups_attr contained in
 hi def link nnG_database_zincblende_Zincblende_related_zb_groups_attr nextnanoAttribute
 
 syn region nnG_quantum_region_Delta_Gamma_L_X matchgroup=nextnanoGroupName start="\<X\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -1229,27 +1213,12 @@ hi def link nnG_quantum_region_kp_8band_dispersion_path_point_attr nextnanoAttri
 
 syn region nnG_quantum_region_kp_8band_interface_kp_parameters_D_s matchgroup=nextnanoGroupName start="\<D_s\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained C2 C4 C6 D_x
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained approximate_kappa
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained bicgstab cg
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained cscg cutoff
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained method none
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained num_points
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained spacing
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained use_Luttinger_parameters
+syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr contained D_x
 hi def link nnG_quantum_region_kp_8band_interface_kp_parameters_D_s_attr nextnanoAttribute
 
 syn region nnG_quantum_region_kp_8band_interface_kp_parameters_alpha matchgroup=nextnanoGroupName start="\<alpha\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained C2 C4 C6
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained approximate_kappa
 syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained beta
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained bicgstab cg
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained cscg cutoff
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained method none
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained num_points
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained spacing
-syn keyword nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr contained use_Luttinger_parameters
 hi def link nnG_quantum_region_kp_8band_interface_kp_parameters_alpha_attr nextnanoAttribute
 
 syn region nnG_splitquantum_region_Delta_Gamma_L_X matchgroup=nextnanoGroupName start="\<X\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -1326,36 +1295,14 @@ syn match nnG_database_Nested_groups_in_database_gattr "\<\%(_zb\)\>\ze\s*=" con
 hi def link nnG_database_Nested_groups_in_database_gattr nextnanoAttribute
 
 syn region nnG_database_bands_Bands_for_Wurtzite matchgroup=nextnanoGroupName start="\<Wurtzite\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_Bands_for_Wurtzite_position,nnG_database_bands_Bands_for_Wurtzite_attr,nnG_database_bands_Bands_for_Wurtzite_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_Bands_for_Wurtzite_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_Bands_for_Wurtzite_attr contained in
 hi def link nnG_database_bands_Bands_for_Wurtzite_attr nextnanoAttribute
-syn match nnG_database_bands_Bands_for_Wurtzite_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_Bands_for_Wurtzite_gattr nextnanoAttribute
-
-syn region nnG_database_bands_Bands_for_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_Bands_for_zincblende matchgroup=nextnanoGroupName start="\<zincblende\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_Bands_for_zincblende_position,nnG_database_bands_Bands_for_zincblende_attr,nnG_database_bands_Bands_for_zincblende_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_Bands_for_zincblende_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_Bands_for_zincblende_attr contained in
 hi def link nnG_database_bands_Bands_for_zincblende_attr nextnanoAttribute
-syn match nnG_database_bands_Bands_for_zincblende_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_Bands_for_zincblende_gattr nextnanoAttribute
-
-syn region nnG_database_bands_Bands_groups_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
-syn region nnG_database_bands_conduction_bands_for_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
-syn region nnG_database_bands_kp_6_bands_for_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
-syn region nnG_database_bands_kp_8_bands_for_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
-syn region nnG_database_bands_valence_bands_for_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_mobility_High_field_mobility matchgroup=nextnanoGroupName start="\<mobility\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_mobility_High_field_mobility_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -5274,21 +5221,14 @@ syn keyword nnG_database_Top_level_keywords_attr contained in
 hi def link nnG_database_Top_level_keywords_attr nextnanoAttribute
 
 syn region nnG_database_bands_Bands_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_Bands_for_position,nnG_database_bands_Bands_for_attr,nnG_database_bands_Bands_for_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_Bands_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_Bands_for_attr contained Wurtzite zincblende
 hi def link nnG_database_bands_Bands_for_attr nextnanoAttribute
-syn match nnG_database_bands_Bands_for_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_Bands_for_gattr nextnanoAttribute
 
 syn region nnG_database_bands_Bands_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_Bands_groups_position,nnG_database_bands_Bands_groups_attr,nnG_database_bands_Bands_groups_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_Bands_groups_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_Bands_groups_attr contained in
 hi def link nnG_database_bands_Bands_groups_attr nextnanoAttribute
-syn match nnG_database_bands_Bands_groups_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_Bands_groups_gattr nextnanoAttribute
-
-syn region nnG_database_bands_Bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands__zb_kp_30_bands matchgroup=nextnanoGroupName start="\<kp_30_bands\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_bands__zb_kp_30_bands_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -5296,41 +5236,33 @@ syn keyword nnG_database_bands__zb_kp_30_bands_attr contained optional
 hi def link nnG_database_bands__zb_kp_30_bands_attr nextnanoAttribute
 
 syn region nnG_database_bands_conduction_bands_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_conduction_bands_for_position,nnG_database_bands_conduction_bands_for_attr,nnG_database_bands_conduction_bands_for_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_conduction_bands_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_conduction_bands_for_attr contained wurtzite zincblende
 hi def link nnG_database_bands_conduction_bands_for_attr nextnanoAttribute
-syn match nnG_database_bands_conduction_bands_for_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_conduction_bands_for_gattr nextnanoAttribute
 
 syn region nnG_database_bands_conduction_bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_kp_6_bands_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_kp_6_bands_for_position,nnG_database_bands_kp_6_bands_for_attr,nnG_database_bands_kp_6_bands_for_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_kp_6_bands_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_kp_6_bands_for_attr contained wurtzite zincblende
 hi def link nnG_database_bands_kp_6_bands_for_attr nextnanoAttribute
-syn match nnG_database_bands_kp_6_bands_for_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_kp_6_bands_for_gattr nextnanoAttribute
 
 syn region nnG_database_bands_kp_6_bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_kp_8_bands_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_kp_8_bands_for_position,nnG_database_bands_kp_8_bands_for_attr,nnG_database_bands_kp_8_bands_for_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_kp_8_bands_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_kp_8_bands_for_attr contained wurtzite zincblende
 hi def link nnG_database_bands_kp_8_bands_for_attr nextnanoAttribute
-syn match nnG_database_bands_kp_8_bands_for_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_kp_8_bands_for_gattr nextnanoAttribute
 
 syn region nnG_database_bands_kp_8_bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_valence_bands_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_valence_bands_for_position,nnG_database_bands_valence_bands_for_attr,nnG_database_bands_valence_bands_for_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_valence_bands_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_valence_bands_for_attr contained wurtzite zincblende
 hi def link nnG_database_bands_valence_bands_for_attr nextnanoAttribute
-syn match nnG_database_bands_valence_bands_for_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_valence_bands_for_gattr nextnanoAttribute
 
 syn region nnG_database_bands_valence_bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -5508,27 +5440,22 @@ hi def link nnG_database_optical_optical_refractive_index_optical_reflectivity_g
 
 syn region nnG_database_other_Other_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_Other_groups_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_Other_groups_attr contained III_V II_VI IV_IV I_VII in optical_a
-syn keyword nnG_database_other_Other_groups_attr contained optical_c
+syn keyword nnG_database_other_Other_groups_attr contained in
 hi def link nnG_database_other_Other_groups_attr nextnanoAttribute
 
 syn region nnG_database_other_dielectric_consts_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_dielectric_consts_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_dielectric_consts_for_attr contained III_V II_VI IV_IV I_VII
-syn keyword nnG_database_other_dielectric_consts_for_attr contained optical_a optical_c wurtzite
-syn keyword nnG_database_other_dielectric_consts_for_attr contained zincblende
+syn keyword nnG_database_other_dielectric_consts_for_attr contained wurtzite zincblende
 hi def link nnG_database_other_dielectric_consts_for_attr nextnanoAttribute
 
 syn region nnG_database_other_mass_density_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_mass_density_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_mass_density_for_attr contained III_V II_VI IV_IV I_VII optical_a
-syn keyword nnG_database_other_mass_density_for_attr contained optical_c wurtzite zincblende
+syn keyword nnG_database_other_mass_density_for_attr contained wurtzite zincblende
 hi def link nnG_database_other_mass_density_for_attr nextnanoAttribute
 
 syn region nnG_database_other_valence_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_valence_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_valence_for_attr contained III_V II_VI IV_IV I_VII optical_a
-syn keyword nnG_database_other_valence_for_attr contained optical_c wurtzite zincblende
+syn keyword nnG_database_other_valence_for_attr contained wurtzite zincblende
 hi def link nnG_database_other_valence_for_attr nextnanoAttribute
 
 syn region nnG_database_phonons_acoustic_phonons_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -5548,7 +5475,7 @@ hi def link nnG_database_recombination_Recombination_binary_zb_attr nextnanoAttr
 
 syn region nnG_database_recombination_Recombination_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_recombination_Recombination_groups_binary_zb,nnG_database_recombination_Recombination_groups_attr,nnG_database_recombination_Recombination_groups_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_recombination_Recombination_groups_attr contained c c_absorption in
+syn keyword nnG_database_recombination_Recombination_groups_attr contained in
 hi def link nnG_database_recombination_Recombination_groups_attr nextnanoAttribute
 syn match nnG_database_recombination_Recombination_groups_gattr "\<\%(binary_zb\)\>\ze\s*=" contained
 hi def link nnG_database_recombination_Recombination_groups_gattr nextnanoAttribute
@@ -5560,27 +5487,27 @@ hi def link nnG_database_recombination_binary_zb_recombination_gattr nextnanoAtt
 
 syn region nnG_database_strain_Strain_groups matchgroup=nextnanoGroupName start="\<groups\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_Strain_groups_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_Strain_groups_attr contained a c in
+syn keyword nnG_database_strain_Strain_groups_attr contained in
 hi def link nnG_database_strain_Strain_groups_attr nextnanoAttribute
 
 syn region nnG_database_strain_elastic_consts_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_elastic_consts_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_elastic_consts_for_attr contained a c wurtzite zincblende
+syn keyword nnG_database_strain_elastic_consts_for_attr contained wurtzite zincblende
 hi def link nnG_database_strain_elastic_consts_for_attr nextnanoAttribute
 
 syn region nnG_database_strain_lattice_consts_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_lattice_consts_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_lattice_consts_for_attr contained a c wurtzite zincblende
+syn keyword nnG_database_strain_lattice_consts_for_attr contained wurtzite zincblende
 hi def link nnG_database_strain_lattice_consts_for_attr nextnanoAttribute
 
 syn region nnG_database_strain_piezoelectric_consts_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_piezoelectric_consts_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_piezoelectric_consts_for_attr contained a c wurtzite zincblende
+syn keyword nnG_database_strain_piezoelectric_consts_for_attr contained wurtzite zincblende
 hi def link nnG_database_strain_piezoelectric_consts_for_attr nextnanoAttribute
 
 syn region nnG_database_strain_pyroelectric_consts_for matchgroup=nextnanoGroupName start="\<for\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_pyroelectric_consts_for_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_pyroelectric_consts_for_attr contained a c wurtzite
+syn keyword nnG_database_strain_pyroelectric_consts_for_attr contained wurtzite
 hi def link nnG_database_strain_pyroelectric_consts_for_attr nextnanoAttribute
 
 syn region nnG_database_wurtzite_Wurtzite_related matchgroup=nextnanoGroupName start="\<related\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -12224,11 +12151,9 @@ syn keyword nnG_database_Top_level_attr contained keywords
 hi def link nnG_database_Top_level_attr nextnanoAttribute
 
 syn region nnG_database_bands_Bands matchgroup=nextnanoGroupName start="\<Bands\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands_Bands_position,nnG_database_bands_Bands_attr,nnG_database_bands_Bands_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands_Bands_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_Bands_attr contained for groups
 hi def link nnG_database_bands_Bands_attr nextnanoAttribute
-syn match nnG_database_bands_Bands_gattr "\<\%(position\)\>\ze\s*=" contained
-hi def link nnG_database_bands_Bands_gattr nextnanoAttribute
 
 syn region nnG_database_bands__zb matchgroup=nextnanoGroupName start="\<_zb\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_bands__zb_kp_30_bands,nnG_database_bands__zb_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -12255,9 +12180,6 @@ syn keyword nnG_database_bands_kp_8_bands_attr contained for
 hi def link nnG_database_bands_kp_8_bands_attr nextnanoAttribute
 syn match nnG_database_bands_kp_8_bands_gattr "\<\%(position\)\>\ze\s*=" contained
 hi def link nnG_database_bands_kp_8_bands_gattr nextnanoAttribute
-
-syn region nnG_database_bands_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_bands_valence_bands matchgroup=nextnanoGroupName start="\<valence_bands\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_bands_valence_bands_position,nnG_database_bands_valence_bands_attr,nnG_database_bands_valence_bands_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -12406,8 +12328,7 @@ hi def link nnG_database_optical_reflectivity_at_attr nextnanoAttribute
 
 syn region nnG_database_other_Other matchgroup=nextnanoGroupName start="\<Other\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_Other_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_Other_attr contained III_V II_VI IV_IV I_VII groups optical_a
-syn keyword nnG_database_other_Other_attr contained optical_c
+syn keyword nnG_database_other_Other_attr contained groups
 hi def link nnG_database_other_Other_attr nextnanoAttribute
 
 syn region nnG_database_other_dielectric_consts matchgroup=nextnanoGroupName start="\<dielectric_consts\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -12424,8 +12345,7 @@ hi def link nnG_database_other_mass_density_attr nextnanoAttribute
 
 syn region nnG_database_other_valence matchgroup=nextnanoGroupName start="\<valence\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_valence_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_valence_attr contained III_V II_VI IV_IV I_VII for optical_a
-syn keyword nnG_database_other_valence_attr contained optical_c
+syn keyword nnG_database_other_valence_attr contained for
 hi def link nnG_database_other_valence_attr nextnanoAttribute
 
 syn region nnG_database_phonons_Phonons matchgroup=nextnanoGroupName start="\<Phonons\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -12445,7 +12365,7 @@ hi def link nnG_database_phonons_optical_phonons_attr nextnanoAttribute
 
 syn region nnG_database_recombination_Recombination matchgroup=nextnanoGroupName start="\<Recombination\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_recombination_Recombination_binary_zb,nnG_database_recombination_Recombination_attr,nnG_database_recombination_Recombination_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_recombination_Recombination_attr contained c c_absorption groups
+syn keyword nnG_database_recombination_Recombination_attr contained groups
 hi def link nnG_database_recombination_Recombination_attr nextnanoAttribute
 syn match nnG_database_recombination_Recombination_gattr "\<\%(binary_zb\)\>\ze\s*=" contained
 hi def link nnG_database_recombination_Recombination_gattr nextnanoAttribute
@@ -12457,7 +12377,7 @@ hi def link nnG_database_recombination_binary_zb_attr nextnanoAttribute
 
 syn region nnG_database_strain_Strain matchgroup=nextnanoGroupName start="\<Strain\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_strain_Strain_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_strain_Strain_attr contained a c groups
+syn keyword nnG_database_strain_Strain_attr contained groups
 hi def link nnG_database_strain_Strain_attr nextnanoAttribute
 
 syn region nnG_database_strain_elastic_consts matchgroup=nextnanoGroupName start="\<elastic_consts\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -12482,13 +12402,12 @@ hi def link nnG_database_strain_pyroelectric_consts_attr nextnanoAttribute
 
 syn region nnG_database_top_level_attributes_Top matchgroup=nextnanoGroupName start="\<Top\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_top_level_attributes_Top_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_top_level_attributes_Top_attr contained Options Tools default level
-syn keyword nnG_database_top_level_attributes_Top_attr contained mandatory nextnanomat
+syn keyword nnG_database_top_level_attributes_Top_attr contained level
 hi def link nnG_database_top_level_attributes_Top_attr nextnanoAttribute
 
 syn region nnG_database_wurtzite_Wurtzite matchgroup=nextnanoGroupName start="\<Wurtzite\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_wurtzite_Wurtzite_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_wurtzite_Wurtzite_attr contained AlN GaN InN related
+syn keyword nnG_database_wurtzite_Wurtzite_attr contained related
 hi def link nnG_database_wurtzite_Wurtzite_attr nextnanoAttribute
 
 syn region nnG_database_wurtzite_binary_wz matchgroup=nextnanoGroupName start="\<binary_wz\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -12533,7 +12452,7 @@ hi def link nnG_database_wurtzite_ternary_wz_attr nextnanoAttribute
 
 syn region nnG_database_zincblende_Zincblende matchgroup=nextnanoGroupName start="\<Zincblende\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_zincblende_Zincblende_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_zincblende_Zincblende_attr contained GaAs InP Si related
+syn keyword nnG_database_zincblende_Zincblende_attr contained related
 hi def link nnG_database_zincblende_Zincblende_attr nextnanoAttribute
 
 syn region nnG_database_zincblende_binary_zb matchgroup=nextnanoGroupName start="\<binary_zb\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -13718,9 +13637,6 @@ syn region nnG_structure_region_import matchgroup=nextnanoGroupName start="\<imp
 syn match nnG_structure_region_import_gattr "\<\%(constant\|gaussian1D\|gaussian2D\|gaussian3D\|linear\)\>\ze\s*=" contained
 hi def link nnG_structure_region_import_gattr nextnanoAttribute
 
-syn region nnG_structure_region_injection matchgroup=nextnanoGroupName start="\<injection\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-
 syn region nnG_structure_region_integrate matchgroup=nextnanoGroupName start="\<integrate\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_structure_region_integrate_electron_density,nnG_structure_region_integrate_fixed_charge_density,nnG_structure_region_integrate_hole_density,nnG_structure_region_integrate_ionized_acceptor_density,nnG_structure_region_integrate_ionized_donor_density,nnG_structure_region_integrate_piezo_density,nnG_structure_region_integrate_polarization_density,nnG_structure_region_integrate_pyro_density,nnG_structure_region_integrate_attr,nnG_structure_region_integrate_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_structure_region_integrate_attr contained label
@@ -13902,8 +13818,7 @@ hi def link nnG_structure_region_semiellipsoid_gattr nextnanoAttribute
 
 syn region nnG_structure_region_shape matchgroup=nextnanoGroupName start="\<shape\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_structure_region_shape_circle,nnG_structure_region_shape_cone,nnG_structure_region_shape_cuboid,nnG_structure_region_shape_cylinder,nnG_structure_region_shape_hexagon,nnG_structure_region_shape_hexagon_obelisk,nnG_structure_region_shape_hexagonal_prism,nnG_structure_region_shape_hexagonal_pyramid,nnG_structure_region_shape_line,nnG_structure_region_shape_obelisk,nnG_structure_region_shape_polygon,nnG_structure_region_shape_polygonal_prism,nnG_structure_region_shape_polygonal_pyramid,nnG_structure_region_shape_pyramid,nnG_structure_region_shape_rectangle,nnG_structure_region_shape_regular_polygon,nnG_structure_region_shape_regular_prism,nnG_structure_region_shape_regular_pyramid,nnG_structure_region_shape_semiellipse,nnG_structure_region_shape_semiellipsoid,nnG_structure_region_shape_sphere,nnG_structure_region_shape_trapezoid,nnG_structure_region_shape_triangle,nnG_structure_region_shape_attr,nnG_structure_region_shape_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_structure_region_shape_attr contained axis base_x base_y base_z max min objects
-syn keyword nnG_structure_region_shape_attr contained top_x top_y top_z
+syn keyword nnG_structure_region_shape_attr contained objects
 hi def link nnG_structure_region_shape_attr nextnanoAttribute
 syn match nnG_structure_region_shape_gattr "\<\%(circle\|cone\|cuboid\|cylinder\|hexagon\|hexagon_obelisk\|hexagonal_prism\|hexagonal_pyramid\|line\|obelisk\|polygon\|polygonal_prism\|polygonal_pyramid\|pyramid\|rectangle\|regular_polygon\|regular_prism\|regular_pyramid\|semiellipse\|semiellipsoid\|sphere\|trapezoid\|triangle\)\>\ze\s*=" contained
 hi def link nnG_structure_region_shape_gattr nextnanoAttribute
@@ -14201,10 +14116,10 @@ syn keyword nnG_database_Top_attr contained level
 hi def link nnG_database_Top_attr nextnanoAttribute
 
 syn region nnG_database_bands matchgroup=nextnanoGroupName start="\<bands\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_database_bands__zb,nnG_database_bands_conduction_bands,nnG_database_bands_kp_6_bands,nnG_database_bands_kp_8_bands,nnG_database_bands_position,nnG_database_bands_valence_bands,nnG_database_bands_attr,nnG_database_bands_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+      \ contains=nnG_database_bands__zb,nnG_database_bands_conduction_bands,nnG_database_bands_kp_6_bands,nnG_database_bands_kp_8_bands,nnG_database_bands_valence_bands,nnG_database_bands_attr,nnG_database_bands_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 syn keyword nnG_database_bands_attr contained Bands
 hi def link nnG_database_bands_attr nextnanoAttribute
-syn match nnG_database_bands_gattr "\<\%(_zb\|conduction_bands\|kp_6_bands\|kp_8_bands\|position\|valence_bands\)\>\ze\s*=" contained
+syn match nnG_database_bands_gattr "\<\%(_zb\|conduction_bands\|kp_6_bands\|kp_8_bands\|valence_bands\)\>\ze\s*=" contained
 hi def link nnG_database_bands_gattr nextnanoAttribute
 
 syn region nnG_database_binary_wz matchgroup=nextnanoGroupName start="\<binary_wz\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
@@ -14251,8 +14166,7 @@ hi def link nnG_database_optical_reflectivity_gattr nextnanoAttribute
 
 syn region nnG_database_other matchgroup=nextnanoGroupName start="\<other\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_other_dielectric_consts,nnG_database_other_mass_density,nnG_database_other_attr,nnG_database_other_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_other_attr contained III_V II_VI IV_IV I_VII Other optical_a optical_c
-syn keyword nnG_database_other_attr contained valence
+syn keyword nnG_database_other_attr contained Other valence
 hi def link nnG_database_other_attr nextnanoAttribute
 syn match nnG_database_other_gattr "\<\%(dielectric_consts\|mass_density\)\>\ze\s*=" contained
 hi def link nnG_database_other_gattr nextnanoAttribute
@@ -14263,9 +14177,6 @@ syn keyword nnG_database_phonons_attr contained Phonons
 hi def link nnG_database_phonons_attr nextnanoAttribute
 syn match nnG_database_phonons_gattr "\<\%(acoustic_phonons\|optical_phonons\)\>\ze\s*=" contained
 hi def link nnG_database_phonons_gattr nextnanoAttribute
-
-syn region nnG_database_position matchgroup=nextnanoGroupName start="\<position\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
 
 syn region nnG_database_recombination matchgroup=nextnanoGroupName start="\<recombination\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_recombination_binary_zb,nnG_database_recombination_attr,nnG_database_recombination_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
@@ -14283,20 +14194,19 @@ hi def link nnG_database_strain_gattr nextnanoAttribute
 
 syn region nnG_database_top_level_attributes matchgroup=nextnanoGroupName start="\<top_level_attributes\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_top_level_attributes_attr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_top_level_attributes_attr contained Options Tools Top default mandatory
-syn keyword nnG_database_top_level_attributes_attr contained nextnanomat
+syn keyword nnG_database_top_level_attributes_attr contained Top
 hi def link nnG_database_top_level_attributes_attr nextnanoAttribute
 
 syn region nnG_database_wurtzite matchgroup=nextnanoGroupName start="\<wurtzite\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_wurtzite_binary_wz,nnG_database_wurtzite_bowing_wz,nnG_database_wurtzite_quaternary4_wz,nnG_database_wurtzite_quaternary_wz,nnG_database_wurtzite_quinternary6_wz,nnG_database_wurtzite_quinternary_wz,nnG_database_wurtzite_ternary2_wz,nnG_database_wurtzite_ternary_wz,nnG_database_wurtzite_attr,nnG_database_wurtzite_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_wurtzite_attr contained AlN GaN InN Wurtzite
+syn keyword nnG_database_wurtzite_attr contained Wurtzite
 hi def link nnG_database_wurtzite_attr nextnanoAttribute
 syn match nnG_database_wurtzite_gattr "\<\%(binary_wz\|bowing_wz\|quaternary4_wz\|quaternary_wz\|quinternary6_wz\|quinternary_wz\|ternary2_wz\|ternary_wz\)\>\ze\s*=" contained
 hi def link nnG_database_wurtzite_gattr nextnanoAttribute
 
 syn region nnG_database_zincblende matchgroup=nextnanoGroupName start="\<zincblende\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
       \ contains=nnG_database_zincblende_binary_zb,nnG_database_zincblende_bowing_zb,nnG_database_zincblende_quaternary4_zb,nnG_database_zincblende_quaternary_zb,nnG_database_zincblende_quinternary6_zb,nnG_database_zincblende_quinternary_zb,nnG_database_zincblende_ternary2_zb,nnG_database_zincblende_ternary_zb,nnG_database_zincblende_attr,nnG_database_zincblende_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_zincblende_attr contained GaAs InP Si Zincblende
+syn keyword nnG_database_zincblende_attr contained Zincblende
 hi def link nnG_database_zincblende_attr nextnanoAttribute
 syn match nnG_database_zincblende_gattr "\<\%(binary_zb\|bowing_zb\|quaternary4_zb\|quaternary_zb\|quinternary6_zb\|quinternary_zb\|ternary2_zb\|ternary_zb\)\>\ze\s*=" contained
 hi def link nnG_database_zincblende_gattr nextnanoAttribute
@@ -14924,19 +14834,18 @@ syn keyword nnG_structure_output_user_index_attr contained boxes
 hi def link nnG_structure_output_user_index_attr nextnanoAttribute
 
 syn region nnG_structure_region matchgroup=nextnanoGroupName start="\<region\>\_s*{" matchgroup=nextnanoDelim end="}" fold contained
-      \ contains=nnG_structure_region_array2_x,nnG_structure_region_array2_y,nnG_structure_region_array2_z,nnG_structure_region_array_x,nnG_structure_region_array_y,nnG_structure_region_array_z,nnG_structure_region_binary,nnG_structure_region_circle,nnG_structure_region_cone,nnG_structure_region_constant,nnG_structure_region_contact,nnG_structure_region_cuboid,nnG_structure_region_cylinder,nnG_structure_region_doping,nnG_structure_region_everywhere,nnG_structure_region_gaussian1D,nnG_structure_region_gaussian2D,nnG_structure_region_gaussian3D,nnG_structure_region_generation,nnG_structure_region_hexagon,nnG_structure_region_hexagon_obelisk,nnG_structure_region_hexagonal_prism,nnG_structure_region_hexagonal_pyramid,nnG_structure_region_import,nnG_structure_region_injection,nnG_structure_region_integrate,nnG_structure_region_line,nnG_structure_region_linear,nnG_structure_region_obelisk,nnG_structure_region_polygon,nnG_structure_region_polygonal_prism,nnG_structure_region_polygonal_pyramid,nnG_structure_region_pyramid,nnG_structure_region_quaternary_constant,nnG_structure_region_quaternary_import,nnG_structure_region_quaternary_linear,nnG_structure_region_quaternary_pyramid,nnG_structure_region_quaternary_trumpet,nnG_structure_region_quinternary_constant,nnG_structure_region_quinternary_import,nnG_structure_region_quinternary_linear,nnG_structure_region_quinternary_pyramid,nnG_structure_region_quinternary_trumpet,nnG_structure_region_rectangle,nnG_structure_region_regular_polygon,nnG_structure_region_regular_prism,nnG_structure_region_regular_pyramid,nnG_structure_region_remove,nnG_structure_region_semiellipse,nnG_structure_region_semiellipsoid,nnG_structure_region_sphere,nnG_structure_region_ternary_constant,nnG_structure_region_ternary_import,nnG_structure_region_ternary_linear,nnG_structure_region_ternary_pyramid,nnG_structure_region_ternary_trumpet,nnG_structure_region_trapezoid,nnG_structure_region_triangle,nnG_structure_region_attr,nnG_structure_region_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_structure_region_attr contained all alloy assigning axis base_x base_y base_z
-syn keyword nnG_structure_region_attr contained max min other repeat_profiles shape top_x top_y
-syn keyword nnG_structure_region_attr contained top_z user_index
+      \ contains=nnG_structure_region_array2_x,nnG_structure_region_array2_y,nnG_structure_region_array2_z,nnG_structure_region_array_x,nnG_structure_region_array_y,nnG_structure_region_array_z,nnG_structure_region_binary,nnG_structure_region_circle,nnG_structure_region_cone,nnG_structure_region_constant,nnG_structure_region_contact,nnG_structure_region_cuboid,nnG_structure_region_cylinder,nnG_structure_region_doping,nnG_structure_region_everywhere,nnG_structure_region_gaussian1D,nnG_structure_region_gaussian2D,nnG_structure_region_gaussian3D,nnG_structure_region_generation,nnG_structure_region_hexagon,nnG_structure_region_hexagon_obelisk,nnG_structure_region_hexagonal_prism,nnG_structure_region_hexagonal_pyramid,nnG_structure_region_import,nnG_structure_region_integrate,nnG_structure_region_line,nnG_structure_region_linear,nnG_structure_region_obelisk,nnG_structure_region_polygon,nnG_structure_region_polygonal_prism,nnG_structure_region_polygonal_pyramid,nnG_structure_region_pyramid,nnG_structure_region_quaternary_constant,nnG_structure_region_quaternary_import,nnG_structure_region_quaternary_linear,nnG_structure_region_quaternary_pyramid,nnG_structure_region_quaternary_trumpet,nnG_structure_region_quinternary_constant,nnG_structure_region_quinternary_import,nnG_structure_region_quinternary_linear,nnG_structure_region_quinternary_pyramid,nnG_structure_region_quinternary_trumpet,nnG_structure_region_rectangle,nnG_structure_region_regular_polygon,nnG_structure_region_regular_prism,nnG_structure_region_regular_pyramid,nnG_structure_region_remove,nnG_structure_region_semiellipse,nnG_structure_region_semiellipsoid,nnG_structure_region_sphere,nnG_structure_region_ternary_constant,nnG_structure_region_ternary_import,nnG_structure_region_ternary_linear,nnG_structure_region_ternary_pyramid,nnG_structure_region_ternary_trumpet,nnG_structure_region_trapezoid,nnG_structure_region_triangle,nnG_structure_region_attr,nnG_structure_region_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+syn keyword nnG_structure_region_attr contained assigning axis base_x base_y base_z max min
+syn keyword nnG_structure_region_attr contained repeat_profiles shape top_x top_y top_z
+syn keyword nnG_structure_region_attr contained user_index
 hi def link nnG_structure_region_attr nextnanoAttribute
-syn match nnG_structure_region_gattr "\<\%(array2_x\|array2_y\|array2_z\|array_x\|array_y\|array_z\|binary\|circle\|cone\|constant\|contact\|cuboid\|cylinder\|doping\|everywhere\|gaussian1D\|gaussian2D\|gaussian3D\|generation\|hexagon\|hexagon_obelisk\|hexagonal_prism\|hexagonal_pyramid\|import\|injection\|integrate\|line\|linear\|obelisk\|polygon\|polygonal_prism\|polygonal_pyramid\|pyramid\|quaternary_constant\|quaternary_import\|quaternary_linear\|quaternary_pyramid\|quaternary_trumpet\|quinternary_constant\|quinternary_import\|quinternary_linear\|quinternary_pyramid\|quinternary_trumpet\|rectangle\|regular_polygon\|regular_prism\|regular_pyramid\|remove\|semiellipse\|semiellipsoid\|sphere\|ternary_constant\|ternary_import\|ternary_linear\|ternary_pyramid\|ternary_trumpet\|trapezoid\|triangle\)\>\ze\s*=" contained
+syn match nnG_structure_region_gattr "\<\%(array2_x\|array2_y\|array2_z\|array_x\|array_y\|array_z\|binary\|circle\|cone\|constant\|contact\|cuboid\|cylinder\|doping\|everywhere\|gaussian1D\|gaussian2D\|gaussian3D\|generation\|hexagon\|hexagon_obelisk\|hexagonal_prism\|hexagonal_pyramid\|import\|integrate\|line\|linear\|obelisk\|polygon\|polygonal_prism\|polygonal_pyramid\|pyramid\|quaternary_constant\|quaternary_import\|quaternary_linear\|quaternary_pyramid\|quaternary_trumpet\|quinternary_constant\|quinternary_import\|quinternary_linear\|quinternary_pyramid\|quinternary_trumpet\|rectangle\|regular_polygon\|regular_prism\|regular_pyramid\|remove\|semiellipse\|semiellipsoid\|sphere\|ternary_constant\|ternary_import\|ternary_linear\|ternary_pyramid\|ternary_trumpet\|trapezoid\|triangle\)\>\ze\s*=" contained
 hi def link nnG_structure_region_gattr nextnanoAttribute
 
 syn region nnG_classical matchgroup=nextnanoGroupName start="\<classical\>\_s*{" matchgroup=nextnanoDelim end="}" fold
       \ contains=nnG_classical_Delta,nnG_classical_Gamma,nnG_classical_HH,nnG_classical_L,nnG_classical_LH,nnG_classical_SO,nnG_classical_X,nnG_classical_bulk_dispersion,nnG_classical_energy_distribution,nnG_classical_energy_resolved_density,nnG_classical_output_band_densities,nnG_classical_output_band_densities_matgrid,nnG_classical_output_bandedges,nnG_classical_output_bandgap,nnG_classical_output_carrier_densities,nnG_classical_output_carrier_densities_matgrid,nnG_classical_output_intrinsic_density,nnG_classical_output_ionized_dopant_densities,nnG_classical_output_ionized_dopant_densities_matgrid,nnG_classical_quantum,nnG_classical_semiclassical_spectra,nnG_classical_attr,nnG_classical_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_classical_attr contained band_gap_reference carrier_statistics fermi_dirac
-syn keyword nnG_classical_attr contained limit_classical_density maxwell_boltzmann
-syn keyword nnG_classical_attr contained zero_negative_masses
+syn keyword nnG_classical_attr contained band_gap_reference carrier_statistics
+syn keyword nnG_classical_attr contained limit_classical_density zero_negative_masses
 hi def link nnG_classical_attr nextnanoAttribute
 syn match nnG_classical_gattr "\<\%(Delta\|Gamma\|HH\|L\|LH\|SO\|X\|bulk_dispersion\|energy_distribution\|energy_resolved_density\|output_band_densities\|output_band_densities_matgrid\|output_bandedges\|output_bandgap\|output_carrier_densities\|output_carrier_densities_matgrid\|output_intrinsic_density\|output_ionized_dopant_densities\|output_ionized_dopant_densities_matgrid\|quantum\|semiclassical_spectra\)\>\ze\s*=" contained
 hi def link nnG_classical_gattr nextnanoAttribute
@@ -14964,13 +14873,11 @@ syn match nnG_currents_gattr "\<\%(electron_mobility\|hole_mobility\|import_elec
 hi def link nnG_currents_gattr nextnanoAttribute
 
 syn region nnG_database matchgroup=nextnanoGroupName start="\<database\>\_s*{" matchgroup=nextnanoDelim end="}" fold
-      \ contains=nnG_database_binary_wz,nnG_database_binary_zb,nnG_database_optical_absorption,nnG_database_optical_reflectivity,nnG_database_position,nnG_database_recombination,nnG_database_strain,nnG_database_attr,nnG_database_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
-syn keyword nnG_database_attr contained AlN GaAs GaN III_V II_VI IV_IV I_VII InN InP Nested
-syn keyword nnG_database_attr contained Options Si Tools Top bands default mandatory mobility
-syn keyword nnG_database_attr contained name nextnanomat optical optical_a optical_c other
-syn keyword nnG_database_attr contained phonons top_level_attributes wurtzite zincblende
+      \ contains=nnG_database_binary_wz,nnG_database_binary_zb,nnG_database_optical_absorption,nnG_database_optical_reflectivity,nnG_database_recombination,nnG_database_strain,nnG_database_attr,nnG_database_gattr,@nextnanoCommon,nextnanoUnknown,nextnanoUnknownGroup
+syn keyword nnG_database_attr contained Nested Top bands mobility name optical other phonons
+syn keyword nnG_database_attr contained top_level_attributes wurtzite zincblende
 hi def link nnG_database_attr nextnanoAttribute
-syn match nnG_database_gattr "\<\%(binary_wz\|binary_zb\|optical_absorption\|optical_reflectivity\|position\|recombination\|strain\)\>\ze\s*=" contained
+syn match nnG_database_gattr "\<\%(binary_wz\|binary_zb\|optical_absorption\|optical_reflectivity\|recombination\|strain\)\>\ze\s*=" contained
 hi def link nnG_database_gattr nextnanoAttribute
 
 syn region nnG_global matchgroup=nextnanoGroupName start="\<global\>\_s*{" matchgroup=nextnanoDelim end="}" fold

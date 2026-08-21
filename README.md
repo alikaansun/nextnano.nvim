@@ -20,8 +20,9 @@ error, so a file that highlights clean is very nearly a file that parses.
 - The 39 documented built-in functions (`sqrt`, `erfc`, `fdmhalf`, …); anything
   else before a `(` is flagged
 - Omni completion (`<C-x><C-o>`) offering exactly the groups and attributes valid
-  at the cursor. nvim-cmp and blink.cmp pick this up through their omnifunc
-  sources
+  at the cursor, and — right of an `=` — that attribute's documented values
+  (`carrier_statistics = ` offers `fermi_dirac` and `maxwell_boltzmann`).
+  nvim-cmp and blink.cmp pick this up through their omnifunc sources
 - Folding per group, `#` comment string for `gc`, bracket matching
 
 ## Install
@@ -90,5 +91,5 @@ bash tools/test_syntax.sh       # asserts the highlighting on sample.in
 ```
 
 The generator reads the documentation's Sphinx `searchindex.js` for the keyword
-tree, then the keyword pages and tutorials for the attributes that are only ever
-shown in tables and examples.
+tree, then the keyword pages and tutorials for the attributes and values that are
+only ever shown in tables and examples.

@@ -30,7 +30,23 @@ function M.omnifunc(findstart, base)
   end
 
   local items = {}
-  for _, entry in ipairs(kw.tree[M.path_at(vim.fn.line("."), col)] or {}) do
+  local path = M.path_at(vim.fn.line("."), col)
+
+  -- Right of an "=", the useful candidates are that attribute's allowed values,
+  -- not more keyword names. Attributes taking a number or an array have none,
+  -- and then offering nothing is better than offering the wrong list.
+  local attr = line:sub(1, col):match("([%a_][%w_]*)%s*=%s*[%w_]*$")
+  if attr then
+    local key = path == "" and attr or path .. "." .. attr
+    for _, value in ipairs(kw.values[key] or {}) do
+      if vim.startswith(value, base) then
+        table.insert(items, { word = value, kind = "v", menu = "value" })
+      end
+    end
+    return items
+  end
+
+  for _, entry in ipairs(kw.tree[path] or {}) do
     local word, kind = entry[1], entry[2]
     if vim.startswith(word, base) then
       table.insert(items, {

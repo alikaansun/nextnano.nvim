@@ -40,6 +40,10 @@ optics{
     temperature = 300               # real keyword, wrong group -> flagged
 }
 
+classical{
+    carrier_statistics = fermi_dirac
+}
+
 currents{
     recombination_model{ SRH = yes  Auger = no }   # also valid as SRH{ }
 }

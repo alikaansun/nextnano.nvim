@@ -66,6 +66,21 @@ for [s:word, s:want] in [['photogeneration', 1], ['temperature', 0], ['light_pro
   endif
 endfor
 
+" Right of an "=", the candidates are that attribute's documented values.
+call cursor(1, 1)
+call search('carrier_statistics = ', 'W')
+call cursor(line('.'), col('.') + strlen('carrier_statistics = '))
+let s:values = map(luaeval("require('nextnano.complete').omnifunc(0, '')"), 'v:val.word')
+for [s:word, s:want] in [['fermi_dirac', 1], ['maxwell_boltzmann', 1], ['carrier_statistics', 0]]
+  let s:got = index(s:values, s:word) >= 0
+  if s:got != s:want
+    echo printf('FAIL value completion         %s: expected %d, got %d', s:word, s:want, s:got)
+    let s:failed += 1
+  else
+    echo printf('ok   value completion         %s', s:word)
+  endif
+endfor
+
 if s:failed > 0
   echo printf('%d check(s) failed', s:failed)
   cquit!
