@@ -1,21 +1,52 @@
-# nextnano++ sample input
+# nextnano++ sample input -- exercises every rule in syntax/nextnano.vim
+<sample/>
+
+!TEXT
+Multi-line comment. Prose here is ignored by the parser.
+!ENDTEXT
+
+$WELL_WIDTH = 10.5e-9
+$COUNT      = 42
+$SPACINGS   = [0.5, 0.25, 0.125]
+$FIRST      = $SPACINGS(1)
+$RADIUS     = sqrt(2.0) * $WELL_WIDTH
+$BOGUS      = nosuchfunc(1)         # unknown function -> flagged
+$MATERIAL   = GaAs                  # unquoted string value
+
 global{
     simulate3D{}
-    temperature = 300.0     # Kelvin
+    temperature = 300.0             # Kelvin
     substrate{ name = "GaAs" }
 }
 
-$WELL_WIDTH = 10.5e-9
-$COUNT = 42
-
 grid{
-    xgrid{ line{ pos = -$WELL_WIDTH  spacing = 0.5 } }
+    xgrid{
+        line{ pos = -$WELL_WIDTH  spacing = $FIRST }
+        line{ pos = $WELL_WIDTH   spacing = 0.5 }
+    }
 }
 
+!IF($COUNT)
 quantum{
     region{
         no_density = yes
-        output_wavefunctions{ max_num = 10  scale = 1e3  probabilities = no }
+        output_states{ max_num = 10  scale = 1e3  probabilities = no }
+    }
+}
+!ENDIF
+
+optics{
+    quantum_spectra{}
+    temperature = 300               # real keyword, wrong group -> flagged
+}
+
+currents{
+    recombination_model{ SRH = yes  Auger = no }   # also valid as SRH{ }
+}
+
+structure{
+    regionn{                        # typo -> flagged
+        contact{ name = "gate" }
     }
 }
 
