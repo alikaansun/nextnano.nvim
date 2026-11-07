@@ -1,0 +1,31 @@
+================================================================================
+Python f-string body: doubled braces, comment, values
+================================================================================
+
+global{{
+    $sweepcheck = 1 # Kelvin
+    substrate{ name = "InP" bias = [0, -1.5e3] output = yes }
+}}
+
+--------------------------------------------------------------------------------
+
+(source
+  (identifier) (open)
+  (variable) (assign) (number) (comment)
+  (identifier) (open)
+  (identifier) (assign) (string)
+  (identifier) (assign) (punctuation) (number) (punctuation) (operator) (number) (punctuation)
+  (identifier) (assign) (boolean)
+  (close)
+  (close))
+
+================================================================================
+Host-string escapes are whitespace
+================================================================================
+
+\t\t\tline{{pos = 2}}\n
+
+--------------------------------------------------------------------------------
+
+(source
+  (identifier) (open) (identifier) (assign) (number) (close))
